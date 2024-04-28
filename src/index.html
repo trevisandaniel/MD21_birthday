@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -16,7 +17,7 @@
                 <p class="hero__info__text">
                     Faltam apenas
                 </p>
-                <p class="hero__info__text">--d --h --m --s</p>
+                <p class="hero__info__text"><span id="contador"></span></p>
                 <p class="hero__info__text">
                     para o meu aniversário!
                 </p>
@@ -24,7 +25,56 @@
         </div>
     </header>
 
+    <section class="chart">
+        <div class="container">
+            <div class="chart__info">
+                <ul class="chart__info__ul" data-aos="fade-up-right" data-aos-duration="3000">
+                    <li class="chart__info__ul__li">
+                        <b>Aniversariante</b>
+                        Daniel Trevisan de Miranda
+                    </li>
+                </ul>
+            </div>
 
+            <div class="chart__info">
+                <ul class="chart__info__ul" data-aos="fade-up-left" data-aos-duration="3000">
+                    <li class="chart__info__ul__li">
+                        <b>Quando</b>
+                        21/04/2025
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="chart__info">
+                <ul class="chart__info__ul" data-aos="fade-up-right" data-aos-duration="3000">
+                    <li class="chart__info__ul__li">
+                        <b>Hora</b>
+                        A partir das 13:30
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chart__info">
+                <ul class="chart__info__ul" data-aos="fade-up-left" data-aos-duration="3000">
+                    <li class="chart__info__ul__li">
+                        <b>Pix de presente</b>
+                        R$ <input type="number" placeholder="10,00">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chart__info">
+                <ul class="chart__info__ul" data-aos="fade-up-right" data-aos-duration="3000">
+                    <li class="chart__info__ul__li">
+                        <button>Gerar Pix</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
